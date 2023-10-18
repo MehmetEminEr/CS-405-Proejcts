@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<!-- Mehmet Emin Er 27748 -->
+
+<head>
+    <title>Suicides Bar Chart - Turkey 2022</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .chart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+
+        .chart {
+            border: 2px solid #333;
+            background-color: white;
+            padding: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .label {
+            text-anchor: middle;
+        }
+
+        header {
+            background-color: #cbc4c4;
+            color: rgb(0, 0, 0);
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Number of Suicides and Crude Suicide Rate, 2009-2022</h1>
+    </header>
+
+    <div class="chart-container">
+        <svg viewBox="0 0 1450 450" xmlns="http://www.w3.org/2000/svg" class="chart" width="1450px" height="450px">
+            <defs>
+                <linearGradient id="linear-gradient" x1="0" x2="0" y1="1" y2="0">
+                    <stop offset="0%" style="stop-color: #ffffff; stop-opacity: 0" />
+                    <stop offset="100%" style="stop-color: #ffffff; stop-opacity: 1" />
+                </linearGradient>
+            </defs>
+
+            <!-- X-axis -->
+            <line x1="50" y1="350" x2="1400" y2="350" stroke="black" />
+            <text x="750" y="400" class="label" font-size="20">Year</text>
+
+            <!-- X-axis labels -->
+            <text x="75" y="370" class="label" font-size="20">2009</text>
+            <text x="175" y="370" class="label" font-size="20">2010</text>
+            <text x="275" y="370" class="label" font-size="20">2011</text>
+            <text x="375" y="370" class="label" font-size="20">2012</text>
+            <text x="475" y="370" class="label" font-size="20">2013</text>
+            <text x="575" y="370" class="label" font-size="20">2014</text>
+            <text x="675" y="370" class="label" font-size="20">2015</text>
+            <text x="775" y="370" class="label" font-size="20">2016</text>
+            <text x="875" y="370" class="label" font-size="20">2017</text>
+            <text x="975" y="370" class="label" font-size="20">2018</text>
+            <text x="1075" y="370" class="label" font-size="20">2019</text>
+            <text x="1175" y="370" class="label" font-size="20">2020</text>
+            <text x="1275" y="370" class="label" font-size="20">2021</text>
+            <text x="1375" y="370" class="label" font-size="20">2022</text>
+
+            <!-- Lines for X-axis -->
+            <line x1="125" y1="350" x2="125" y2="360" stroke="black" />
+            <line x1="225" y1="350" x2="225" y2="360" stroke="black" />
+            <line x1="325" y1="350" x2="325" y2="360" stroke="black" />
+            <line x1="425" y1="350" x2="425" y2="360" stroke="black" />
+            <line x1="525" y1="350" x2="525" y2="360" stroke="black" />
+            <line x1="625" y1="350" x2="625" y2="360" stroke="black" />
+            <line x1="725" y1="350" x2="725" y2="360" stroke="black" />
+            <line x1="825" y1="350" x2="825" y2="360" stroke="black" />
+            <line x1="925" y1="350" x2="925" y2="360" stroke="black" />
+            <line x1="1025" y1="350" x2="1025" y2="360" stroke="black" />
+            <line x1="1125" y1="350" x2="1125" y2="360" stroke="black" />
+            <line x1="1225" y1="350" x2="1225" y2="360" stroke="black" />
+            <line x1="1325" y1="350" x2="1325" y2="360" stroke="black" />
+
+            <!-- Lines for Y-axis Number of suicides part -->
+            <line x1="45" y1="50" x2="55" y2="50" stroke="black" />
+            <line x1="45" y1="125" x2="55" y2="125" stroke="black" />
+            <line x1="45" y1="200" x2="55" y2="200" stroke="black" />
+            <line x1="45" y1="275" x2="55" y2="275" stroke="black" />
+            <line x1="45" y1="350" x2="55" y2="350" stroke="black" />
+
+            <!-- Y-axis for Number of Suicides -->
+            <line x1="50" y1="50" x2="50" y2="350" stroke="black" />
+            <text x="100" y="20" class="label" font-size="20">(Number of Suicides)</text>
+
+            <!-- Number of Suicides scale -->
+            <text x="25" y="50" class="label">5000</text>
+            <text x="25" y="125" class="label">3750</text>
+            <text x="25" y="200" class="label">2500</text>
+            <text x="25" y="275" class="label">1250</text>
+            <text x="25" y="350" class="label">0</text>
+
+            <!-- Y-axis for Crude Suicide Rate -->
+            <line x1="1400" y1="50" x2="1400" y2="350" stroke="black" />
+            <text x="1325" y="20" class="label" font-size="20">(Per Hundred Thousand)</text>
+
+            <!-- Crude Suicide Rate scale -->
+            <text x="1430" y="50" class="label">5</text>
+            <text x="1430" y="125" class="label">3.75</text>
+            <text x="1430" y="200" class="label">2.5</text>
+            <text x="1430" y="275" class="label">1.25</text>
+            <text x="1430" y="350" class="label">0</text>
+
+            <!-- Lines for Y-axis Crude suicide rate part -->
+            <line x1="1400" y1="50" x2="1410" y2="50" stroke="black" />
+            <line x1="1400" y1="125" x2="1410" y2="125" stroke="black" />
+            <line x1="1400" y1="200" x2="1410" y2="200" stroke="black" />
+            <line x1="1400" y1="275" x2="1410" y2="275" stroke="black" />
+            <line x1="1400" y1="350" x2="1410" y2="350" stroke="black" />
+
+            <!-- Bars for each year -->
+            <rect x="50" y="172" width="50" height="178" fill="blue" />
+            <rect x="150" y="170" width="50" height="180" fill="blue" />
+            <rect x="250" y="186" width="50" height="164" fill="blue" />
+            <rect x="350" y="152" width="50" height="198" fill="blue" />
+            <rect x="450" y="153" width="50" height="197" fill="blue" />
+            <rect x="550" y="157" width="50" height="193" fill="blue" />
+            <rect x="650" y="154" width="50" height="196" fill="blue" />
+            <rect x="750" y="156" width="50" height="194" fill="blue" />
+            <rect x="850" y="157" width="50" height="193" fill="blue" />
+            <rect x="950" y="149" width="50" height="201" fill="blue" />
+            <rect x="1050" y="143" width="50" height="207" fill="blue" />
+            <rect x="1150" y="134" width="50" height="216" fill="blue" />
+            <rect x="1250" y="119" width="50" height="231" fill="blue" />
+            <rect x="1350" y="120" width="50" height="230" fill="blue" />
+            
+            <!-- Explanation part below for the graph-->
+            <rect x="848" y="497" width="12" height="12" fill="red" />
+            <line x1="830" y1="503" x2="875" y2="503" stroke="red" stroke-width="5" /> 
+            <text x="960" y="505" class="label" font-size="20">Crude Suicide Rate</text> 
+
+            <line x1="550" y1="503" x2="595" y2="503" stroke="blue" stroke-width="5" />
+            <text x="680" y="508" class="label" font-size="20"  >Number of Suicides</text>
+
+            <!-- Crude Suicide Rate Line -->
+            <line x1="75" y1="90" x2="175" y2="89" stroke="red" stroke-width="3"/>
+            <line x1="175" y1="89" x2="275" y2="130" stroke="red" stroke-width="3"/>
+            <line x1="275" y1="130" x2="375" y2="130" stroke="red" stroke-width="3"/>
+            <line x1="375" y1="130" x2="475" y2="85" stroke="red" stroke-width="3"/>
+            <line x1="475" y1="85" x2="575" y2="87" stroke="red" stroke-width="3"/>
+            <line x1="575" y1="87" x2="675" y2="86" stroke="red" stroke-width="3"/>
+            <line x1="675" y1="86" x2="775" y2="89" stroke="red" stroke-width="3"/>
+            <line x1="775" y1="89" x2="875" y2="91" stroke="red" stroke-width="3"/>
+            <line x1="875" y1="91" x2="975" y2="90" stroke="red" stroke-width="3"/>
+            <line x1="975" y1="90" x2="1075" y2="86" stroke="red" stroke-width="3"/>
+            <line x1="1075" y1="86" x2="1175" y2="75" stroke="red" stroke-width="3"/>
+            <line x1="1175" y1="75" x2="1275" y2="60" stroke="red" stroke-width="3"/>
+            <line x1="1275" y1="60" x2="1375" y2="65" stroke="red" stroke-width="3"/>
+
+            <!-- Boxes of Crude Suicide Rate Line -->
+            <rect x="72" y="86" width="12" height="12" fill="red" />
+            <rect x="272" y="125" width="12" height="12" fill="red" />
+            <rect x="472" y="80" width="12" height="12" fill="red" />
+            <rect x="1272" y="56" width="12" height="12" fill="red" />
+            <rect x="1372" y="60" width="12" height="12" fill="red" />
+
+            <!-- Numbers of Crude Suicide Rate Line -->
+            <text x="85" y="80" font-size="20" fill="black">4.02</text>  
+            <text x="285" y="115" font-size="20" fill="black">3.61</text> 
+            <text x="485" y="70" font-size="20" fill="black">4.27</text>
+            <text x="1285" y="55" font-size="20" fill="black">4.98</text>  
+            <text x="1356" y="58" font-size="20" fill="black">4.88</text> 
+
+            <!-- The number of suicides that written inside the bars -->
+            <text x="-125" y="30" font-size="20" fill="white" transform="rotate(-90 130 80)">2 898</text>
+            <text x="-125" y="130" font-size="20" fill="white" transform="rotate(-90 130 80)">2 933</text>
+            <text x="-125" y="230" font-size="20" fill="white" transform="rotate(-90 130 80)">2 677</text>
+            <text x="-125" y="330" font-size="20" fill="white" transform="rotate(-90 130 80)">3 287</text>
+            <text x="-125" y="430" font-size="20" fill="white" transform="rotate(-90 130 80)">3 252</text>
+            <text x="-125" y="530" font-size="20" fill="white" transform="rotate(-90 130 80)">3 169</text>
+            <text x="-125" y="630" font-size="20" fill="white" transform="rotate(-90 130 80)">3 246</text>
+            <text x="-125" y="730" font-size="20" fill="white" transform="rotate(-90 130 80)">3 193</text>
+            <text x="-125" y="830" font-size="20" fill="white" transform="rotate(-90 130 80)">3 168</text>
+            <text x="-125" y="930" font-size="20" fill="white" transform="rotate(-90 130 80)">3 342</text>
+            <text x="-125" y="1030" font-size="20" fill="white" transform="rotate(-90 130 80)">3 476</text>
+            <text x="-125" y="1130" font-size="20" fill="white" transform="rotate(-90 130 80)">3 710</text>
+            <text x="-125" y="1230" font-size="20" fill="white" transform="rotate(-90 130 80)">4 194</text>
+            <text x="-125" y="1330" font-size="20" fill="white" transform="rotate(-90 130 80)">4 146</text>
+
+
+        </svg>
+    </div>
+
+</body>
+
+</html>
+
+
